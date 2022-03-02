@@ -8,6 +8,7 @@ public class Main {
 
         skoda.setStavNadrze(50);
 
+
         skoda.jazdi(100);
         System.out.println(skoda.getStavNadrze());
 
