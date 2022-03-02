@@ -5,12 +5,13 @@ import sk.stuba.fei.uim.oop.Auto;
 public class Main {
     public static void main(String[] args) {
         Auto skoda = new Auto();
-        Auto bmw = new Auto();
 
-        skoda.jedna = 1;
-        bmw.jedna = 1;
+        skoda.stavNadrze = 50;
 
-        skoda.dva =2;
-        skoda.tri =3;
+        skoda.jazdi(100);
+        System.out.println(skoda.stavNadrze);
+
+        skoda.jazdi(200);
+        System.out.println(skoda.stavNadrze);
     }
 }

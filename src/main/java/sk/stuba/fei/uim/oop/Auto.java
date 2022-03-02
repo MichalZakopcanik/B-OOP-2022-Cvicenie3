@@ -2,12 +2,14 @@ package sk.stuba.fei.uim.oop;
 
 
 public class Auto {
-    int pocetDveri;
-    int pocetKolies;
-    String nazov;
+    public double kapacitaNadrze;
+    public double stavNadrze;
 
-    public int jedna;
-    int dva;
-    protected int tri;
-    private int styri;
+    public void jazdi(double vzdialenost){
+        stavNadrze -= vzdialenost * 0.2 ;
+        if(stavNadrze < 0){
+            stavNadrze = 0;
+        }
+    }
+
     }
