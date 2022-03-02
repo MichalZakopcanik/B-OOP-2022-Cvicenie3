@@ -1,11 +1,24 @@
 package sk.stuba.fei.uim.oop;
 
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public class Auto {
     public static final double PALIVO_NA_KM = 0.2;
+    public static final double KAPACITA_NADRZE = 100;
     private double kapacitaNadrze;
     private double stavNadrze;
     private boolean ojazdene;
+
+    public Auto(){
+        this(KAPACITA_NADRZE);
+    }
+
+    public Auto(double kapacitaNadrze){
+        this.ojazdene = true;
+        this.stavNadrze = 50;
+        this.kapacitaNadrze = kapacitaNadrze;
+    }
 
     public void jazdi(double vzdialenost){
         this.ojazdene = true;
