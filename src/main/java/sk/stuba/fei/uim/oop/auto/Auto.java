@@ -1,7 +1,4 @@
-package sk.stuba.fei.uim.oop;
-
-
-import java.util.concurrent.atomic.AtomicBoolean;
+package sk.stuba.fei.uim.oop.auto;
 
 public class Auto {
     public static final double PALIVO_NA_KM = 0.2;
