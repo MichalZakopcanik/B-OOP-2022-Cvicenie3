@@ -9,8 +9,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-    Auto auto = new Auto();
-    auto.nacitaj();
+        Vozidlo bycikel = new Vozidlo("SOBI 20", 2);
+        Auto volvo = new Auto("Volvo", "XC90", 4);
+
+        bycikel.trubit();
+        volvo.trubit();
 
     }
 
